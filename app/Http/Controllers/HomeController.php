@@ -10,9 +10,9 @@ class HomeController extends Controller
 {
     public function __invoke(){
 
-        $train = Train::all();
+        $trains = Train::all();
 
-        return view('home');
+        return view('home', compact('trains'));
 
     }
 }
